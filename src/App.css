@@ -1,0 +1,35 @@
+/* App.css - YOU & I Salon Custom Styles */
+
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, textarea {
+  transition-property: background-color, border-color, color, transform, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Hover effects */
+button:hover, .hover-scale:hover {
+  transform: translateY(-2px);
+}
+
+/* Focus styles */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 10px 30px rgba(13, 61, 61, 0.15);
+  transform: translateY(-4px);
+}
