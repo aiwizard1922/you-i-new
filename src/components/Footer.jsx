@@ -6,16 +6,16 @@ import { contactInfo } from '../mockData/contact';
 const Footer = () => {
   return (
     <footer className="bg-[#0d3d3d] text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-start">
           {/* Brand */}
-          <div>
+          <div className="flex flex-col">
             <img
               src="https://customer-assets.emergentagent.com/job_843e387b-83bb-4df8-bb8e-6dcdc428d7c3/artifacts/c26lyfja_WhatsApp%20Image%202026-02-16%20at%201.46.23%20PM.jpeg"
-              alt="YOU & I Salon"
+              alt="U & I Salon"
               className="h-16 w-16 object-contain mb-4"
             />
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-300 leading-relaxed max-w-xs">
               Where beauty meets artistry. Experience luxury salon services in a welcoming atmosphere.
             </p>
           </div>
@@ -51,16 +51,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-[#d4af37] mb-4">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <Phone size={18} className="mr-2 mt-0.5 text-[#d4af37]" />
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="flex-shrink-0 mt-0.5 text-[#d4af37]" />
                 <span className="text-sm text-gray-300">{contactInfo.phone}</span>
               </li>
-              <li className="flex items-start">
-                <Mail size={18} className="mr-2 mt-0.5 text-[#d4af37]" />
-                <span className="text-sm text-gray-300">{contactInfo.email}</span>
+              <li className="flex items-start gap-3">
+                <Mail size={18} className="flex-shrink-0 mt-0.5 text-[#d4af37]" />
+                <span className="text-sm text-gray-300 break-words">{contactInfo.email}</span>
               </li>
-              <li className="flex items-start">
-                <MapPin size={18} className="mr-2 mt-0.5 text-[#d4af37]" />
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="flex-shrink-0 mt-0.5 text-[#d4af37]" />
                 <span className="text-sm text-gray-300">
                   {contactInfo.address}<br />{contactInfo.city}
                 </span>
@@ -71,19 +71,23 @@ const Footer = () => {
           {/* Hours & Social */}
           <div>
             <h3 className="text-lg font-semibold text-[#d4af37] mb-4">Hours</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              Tue-Thu: 10 AM - 7 PM<br />
-              Fri: 10 AM - 8 PM<br />
-              Sat: 9 AM - 6 PM<br />
-              Sun: 10 AM - 5 PM<br />
-              Mon: Closed
+            <p className="text-sm text-gray-300 leading-relaxed mb-4">
+              Mon: 08:30 AM - 08:30 PM<br />
+              Tue: 09:00 AM - 07:00 PM<br />
+              Wed: 08:30 AM - 08:30 PM<br />
+              Thu: 08:30 AM - 08:30 PM<br />    
+              Fri: 08:30 AM - 08:30 PM<br />
+              Sat: 08:30 AM - 09:30 PM<br />
+              Sun: 08:00 AM - 09:30 PM<br />
+              
             </p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex items-center gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/uandi_unisex_salon?igsh=eXFwd3l5YXdmcHBx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-[#d4af37] transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram size={24} />
               </a>
@@ -92,6 +96,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-[#d4af37] transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook size={24} />
               </a>
@@ -99,9 +104,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            © 2025 YOU & I Salon. All rights reserved.
+            © 2025 U & I Salon. All rights reserved.
           </p>
         </div>
       </div>

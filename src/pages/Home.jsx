@@ -34,7 +34,7 @@ const Home = () => {
 
         <div className="container mx-auto px-4 relative z-10 text-center">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            YOU & I Salon
+            U & I Salon
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
             Where beauty meets artistry. Experience luxury salon services in a welcoming atmosphere.
@@ -103,7 +103,7 @@ const Home = () => {
             Ready to Transform Your Look?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Book your appointment today and experience the YOU & I difference
+            Book your appointment today and experience the U & I difference
           </p>
           <Link to="/contact">
             <Button className="bg-[#d4af37] hover:bg-[#c9a961] text-[#0d3d3d] font-semibold px-10 py-6 text-lg">

@@ -90,41 +90,53 @@ const ContactUs = () => {
               </h2>
               
               <div className="space-y-6">
-                {/* Phone */}
-                <div className="bg-white rounded-lg p-6 shadow-lg flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                {/* Phone - Click to call */}
+                <a
+                  href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                  className="bg-white rounded-lg p-6 shadow-lg flex items-start hover:shadow-xl transition-shadow cursor-pointer group block"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-105 transition-transform">
                     <Phone className="text-[#d4af37]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2">Phone</h3>
+                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2 group-hover:text-[#d4af37] transition-colors">Phone</h3>
                     <p className="text-gray-600">{contactInfo.phone}</p>
-                    <p className="text-sm text-gray-500 mt-1">Call us for appointments</p>
+                    <p className="text-sm text-[#d4af37] mt-1 font-medium">Tap to call</p>
                   </div>
-                </div>
+                </a>
 
-                {/* Email */}
-                <div className="bg-white rounded-lg p-6 shadow-lg flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                {/* Email - Click to send email */}
+                <a
+                  href={`mailto:${contactInfo.email}`}
+                  className="bg-white rounded-lg p-6 shadow-lg flex items-start hover:shadow-xl transition-shadow cursor-pointer group block"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-105 transition-transform">
                     <Mail className="text-[#d4af37]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2">Email</h3>
+                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2 group-hover:text-[#d4af37] transition-colors">Email</h3>
                     <p className="text-gray-600">{contactInfo.email}</p>
-                    <p className="text-sm text-gray-500 mt-1">Send us your questions</p>
+                    <p className="text-sm text-[#d4af37] mt-1 font-medium">Tap to email</p>
                   </div>
-                </div>
+                </a>
 
-                {/* Address */}
-                <div className="bg-white rounded-lg p-6 shadow-lg flex items-start">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                {/* Address - Click to open Google Maps */}
+                <a
+                  href={contactInfo.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white rounded-lg p-6 shadow-lg flex items-start hover:shadow-xl transition-shadow cursor-pointer group block"
+                >
+                  <div className="w-12 h-12 bg-gradient-to-br from-[#0d3d3d] to-[#1a4d4d] rounded-full flex items-center justify-center mr-4 flex-shrink-0 group-hover:scale-105 transition-transform">
                     <MapPin className="text-[#d4af37]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2">Location</h3>
+                    <h3 className="text-lg font-semibold text-[#0d3d3d] mb-2 group-hover:text-[#d4af37] transition-colors">Location</h3>
                     <p className="text-gray-600">{contactInfo.address}</p>
                     <p className="text-gray-600">{contactInfo.city}</p>
+                    <p className="text-sm text-[#d4af37] mt-1 font-medium">Tap for directions</p>
                   </div>
-                </div>
+                </a>
 
                 {/* Hours */}
                 <div className="bg-white rounded-lg p-6 shadow-lg">
@@ -164,7 +176,7 @@ const ContactUs = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="your name"
                       className="border-gray-300 focus:border-[#d4af37] focus:ring-[#d4af37]"
                     />
                   </div>
@@ -180,7 +192,7 @@ const ContactUs = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="your mail id"
                       className="border-gray-300 focus:border-[#d4af37] focus:ring-[#d4af37]"
                     />
                   </div>
@@ -195,7 +207,7 @@ const ContactUs = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="your phone number"
                       className="border-gray-300 focus:border-[#d4af37] focus:ring-[#d4af37]"
                     />
                   </div>

@@ -1,3 +1,5 @@
+// Add team members here when you want to showcase staff on the About Us page.
+// Leave empty [] to hide individual profiles, or add objects with: id, name, role, specialty, experience, bio, image
 export const teamMembers = [
   {
     id: 1,

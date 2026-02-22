@@ -35,13 +35,13 @@ const Header = () => {
           <Link to="/" className="flex items-center">
             <img
               src="https://customer-assets.emergentagent.com/job_843e387b-83bb-4df8-bb8e-6dcdc428d7c3/artifacts/c26lyfja_WhatsApp%20Image%202026-02-16%20at%201.46.23%20PM.jpeg"
-              alt="YOU & I Salon"
+              alt="U & I Salon"
               className="h-12 w-12 object-contain"
             />
             <span className={`ml-3 text-xl font-bold transition-colors ${
               isScrolled ? 'text-[#0d3d3d]' : 'text-white'
             }`}>
-              YOU & I
+              U & I
             </span>
           </Link>
 

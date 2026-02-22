@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
+import AdminMessages from "./pages/AdminMessages";
 import { Toaster } from "sonner";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/admin/messages" element={<AdminMessages />} />
         </Routes>
         <Footer />
         <Toaster />

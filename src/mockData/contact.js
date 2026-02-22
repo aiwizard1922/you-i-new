@@ -1,15 +1,16 @@
 export const contactInfo = {
-  phone: "(555) 123-4567",
-  email: "info@youandsalon.com",
-  address: "123 Beauty Lane, Suite 100",
-  city: "Chitradurga 577501 Karnataka",
+  phone: "+91 9380130076",
+  email: "uandiunisexsalon@gmail.com",
+  address: "10th Cross, KHB Colony Surya Putra Circle Road",
+  city: "Chitradurga, 577501",
+  mapsUrl: "https://maps.app.goo.gl/WqL4HAUJfkpnEcMz7",
   hours: {
-    monday: "Closed",
-    tuesday: "10:00 AM - 7:00 PM",
-    wednesday: "10:00 AM - 7:00 PM",
-    thursday: "10:00 AM - 7:00 PM",
-    friday: "10:00 AM - 8:00 PM",
-    saturday: "9:00 AM - 6:00 PM",
-    sunday: "10:00 AM - 5:00 PM"
+    monday: "08:30 AM - 08:30 PM",
+    tuesday: "09:00 AM - 07:00 PM",
+    wednesday: "08:30 AM - 08:30 PM",
+    thursday: "08:30 AM - 08:30 PM",
+    friday: "08:30 AM - 08:30 PM",
+    saturday: "08:30 AM - 09:30 PM",
+    sunday: "08:30 AM - 09:30 PM"
   }
 };
