@@ -12,6 +12,17 @@ app.use(express.json());
 // Initialize database on startup
 initDatabase();
 
+// Root route - friendly message when visiting the API URL
+app.get('/', (req, res) => {
+  res.json({
+    message: 'U & I Salon Contact API',
+    endpoints: {
+      'POST /api/contact': 'Submit a contact form',
+      'GET /api/contact': 'Retrieve all contact submissions',
+    },
+  });
+});
+
 // POST /api/contact - Submit contact form
 app.post('/api/contact', (req, res) => {
   try {
