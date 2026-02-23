@@ -17,3 +17,5 @@ Admin: http://localhost:3000/admin/messages (password in .env)
 ## Free Deployment (Render)
 
 https://you-i-new-1.onrender.com/ -> Frontend 
+https://you-i-new.onrender.com/ -> Backend
+https://you-i-new-1.onrender.com/admin/messages -> Admin site (just to track the form submissions)
