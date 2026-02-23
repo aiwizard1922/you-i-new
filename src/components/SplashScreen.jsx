@@ -92,7 +92,7 @@ const SplashScreen = ({ onComplete }) => {
             opacity: 0,
           }}
         >
-          Beauty & Beyond
+          Two Souls One Style
         </p>
 
         {/* Loading bar - minimal */}
