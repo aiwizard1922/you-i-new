@@ -18,6 +18,198 @@
   animation: fade-in 1s ease-out forwards;
 }
 
+/* Splash screen animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(10px, -15px) rotate(5deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-5px, -25px) rotate(-3deg);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translate(-15px, -10px) rotate(2deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 80px rgba(212, 175, 55, 0.5);
+  }
+}
+
+@keyframes logo-reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes text-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes loading-bar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(201, 169, 110, 0.3);
+    box-shadow: 0 0 30px rgba(201, 169, 110, 0.1);
+  }
+  50% {
+    border-color: rgba(201, 169, 110, 0.5);
+    box-shadow: 0 0 40px rgba(201, 169, 110, 0.2);
+  }
+}
+
+/* Premium splash animations */
+@keyframes blob-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    transform: scale(1.05) rotate(5deg);
+  }
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+    transform: scale(0.95) rotate(-5deg);
+  }
+  75% {
+    border-radius: 60% 40% 60% 30% / 70% 30% 50% 60%;
+    transform: scale(1.02) rotate(3deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.8;
+    border-width: 2px;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+@keyframes letter-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.3);
+  }
+  70% {
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes logo-3d {
+  0% {
+    opacity: 0;
+    transform: perspective(800px) rotateX(-90deg) scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(10deg) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0deg) scale(1);
+  }
+}
+
+@keyframes sweep {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
