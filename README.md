@@ -14,8 +14,6 @@ npm install && npm start
 
 Admin: http://localhost:3000/admin/messages (password in .env)
 
-## Free Deployment (Vercel + Render)
+## Free Deployment (Render)
 
-- **Frontend:** Deploy on [Vercel](https://vercel.com) (free)
-- **Backend:** Deploy on [Render](https://render.com) (free)
-- Set `REACT_APP_API_URL` in Vercel to your Render backend URL
+https://you-i-new-1.onrender.com/ -> Frontend 
