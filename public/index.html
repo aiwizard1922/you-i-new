@@ -4,9 +4,81 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>U &amp; I Unisex Salon</title>
+    <meta
+      name="description"
+      content="U &amp; I Unisex Salon — hair and beauty services in Chitradurga, Karnataka. 10th Cross, KHB Colony, Surya Putra Circle Road. Call +91 9380130076."
+    />
+
+    <!-- Open Graph / crawlers that read meta only -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.uandisalon.in/" />
+    <meta property="og:title" content="U &amp; I Unisex Salon — Chitradurga" />
+    <meta
+      property="og:description"
+      content="Hair and beauty services in Chitradurga, Karnataka. Visit us at 10th Cross, KHB Colony, Surya Putra Circle Road, Chitradurga 577501."
+    />
+    <meta property="og:locale" content="en_IN" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="U &amp; I Unisex Salon — Chitradurga" />
+    <meta
+      name="twitter:description"
+      content="Hair and beauty services in Chitradurga, Karnataka. Phone +91 9380130076."
+    />
+
+    <!-- Crawler-visible semantics (SPA mounts into #root; this stays in DOM) -->
+    <style>
+      #static-business-snippet-for-crawlers {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+
+    <!-- Structured data for search & business tools -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "U & I Unisex Salon",
+        "url": "https://www.uandisalon.in/",
+        "telephone": "+919380130076",
+        "email": "uandiunisexsalon@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "10th Cross, KHB Colony, Surya Putra Circle Road",
+          "addressLocality": "Chitradurga",
+          "postalCode": "577501",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "areaServed": { "@type": "City", "name": "Chitradurga" }
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div id="static-business-snippet-for-crawlers" aria-hidden="true">
+      <h1>U &amp; I Unisex Salon</h1>
+      <p>
+        10th Cross, KHB Colony, Surya Putra Circle Road, Chitradurga 577501,
+        Karnataka, India
+      </p>
+      <p>Phone: <a href="tel:+919380130076">+91 9380130076</a></p>
+      <p>
+        Email:
+        <a href="mailto:uandiunisexsalon@gmail.com">uandiunisexsalon@gmail.com</a>
+      </p>
+      <p><a href="https://www.uandisalon.in/">Visit our website</a></p>
+    </div>
+
     <div id="root"></div>
   </body>
-  </html>
+</html>
